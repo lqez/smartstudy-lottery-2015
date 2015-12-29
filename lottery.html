@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SMARTSTUDY Lottery</title>
+    <script src="./CubicVR.min.js" type="text/javascript"> </script>
+    <script src="./ammo.min.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+      var ids = 
+      [
+        "037d966340de5ad4b73aec5b6d9dc1e894a64109",
+        "052fc53506b2325e0f6886526c00c0078b772ece",
+        "08d8c15323ca6b100614fe9b0501b7c876bef452",
+        "0b401dd6beda33f1a77c13c844ddf745fe3437f7",
+        "0be6cdb20b6fe16593b15b1a0c965a9f3b93c3b2",
+        "0ca7f083d6e5bdc7772710c986a06b3d0c3e4838",
+        "12721a6426aba17debf58e52f98152f7549edb82",
+        "12e7ac0de1188fce67fd73abd273e5a8800aa437",
+        "14db1c19ca231ce0304eabfc0b2da2d71f739a49",
+        "19738949a576d411020d4e744b0bbbde2479a911",
+        "1a9ce3f41d54581720f0e9b66916192f2cf97c57",
+        "1ae3b28b6cdcef9b8248f83ccbf813bd3c8c2df3",
+        "1fefe24407c867a876a085ccacd6078919614f97",
+        "22ba3339d26ac33bb1bf90b81705439a39f3a2ee",
+        "25cbc5fa30c31965e7971513d4a7926a4ea91691",
+        "270433321b8bf08be98e47ab4a2a9931823d8c36",
+        "27a701bf1d67e373047c9da462a9abf31026bb8e",
+        "280b741190aa19b1ffc6a54915dbdf0bef4ed849",
+        "286341eee3a98e72f7ec14617b06f929eb053d75",
+        "28d7630079685716a8526ddmf8847b35f713d986",
+        "2bab7072675d6558704593b202a1a1c013c1fd7a",
+        "2c54bfbedb134d71fffb75af724ff98680e78f11",
+        "2d2b54dedfabed7655ea0d08276035c205b593e0",
+        "3132debd674d387075167ccf324feb77e42fb863",
+        "3211ca60ddc564abeef9769988ff53993c54988c",
+        "3405c1d03d76180ac7d663cfdfe57687e99cfa43",
+        "3758d91c65b90aeb7b2f6548832799a86fcb8cd0",
+        "37cddf180e3dd7cbebc7f8173378f817d10bc2e2",
+        "38b182e14b2b163a7aed1add587f04f1564bd69f",
+        "38f87f4796f215216b6eed73ad773f9fa50fa5a8",
+        "3e74cd6bca617d62dd16466a3f7e10f013dbec68",
+        "404839cc904f747a2b4e4bafdc052ec1a901d43f",
+        "4183bb98f62e11e2703a8fa406ef5f16b28ab504",
+        "444b7c3c584953d0b645d6c12d648412d3e29704",
+        "47ff34522c65b5aab0a4c7ec8bebf33a4385f98e",
+        "483135f0fa24d6d15b5ef3d96a91c6936047f2c2",
+        "4d03e87a22583a330f8484bebcfb0e4db23e6bc7",
+        "4d232f7f6afe028ef9b44114321c86706e6956f3",
+        "51a0a9ef429ce845e2eca5626a95ceb83656db86",
+        "52443457b1419cf88946339e6907b1eed1122cda",
+        "57cc10acef38aebea0a99acc0b19f35918c9e91c",
+        "59340138a6e063fd3ffc9b33de0m6421b213b301",
+        "5d9a920ad6f94f745f406815877d35a14470dff4",
+        "5fec32c7df7f422a0440c643db17ba65b467d655",
+        "60cc8b9e0369f12b80e1f785572bf0aaebc64e20",
+        "633df31a0fef5505146368e06099ec59bbd1e7b7",
+        "63600e8ab24deba8778787e42d412fdf847c5bca",
+        "6db1c2c3d7027acfae5058c579ad4f9b72c3664f",
+        "6f5a674e5e45417d692b135d049938a80edc9605",
+        "70f73a1baea9bb740370274cb8e4ffab4501d1a6",
+        "718d645c747f62b6830f064cd9fb29e056c47785",
+        "75316366aa4978e066467acdf97a940c2839ac6d",
+        "75e7ab27a0c03871c8da386ec85708011c441aca",
+        "777d0030406c3d289da13d8bb50204b343b2c3de",
+        "781ceb6c1a2b91c51ceef039aff8a3f54aaa3a51",
+        "7b4e8322cc7d1961e2b3d124e00bca033f0abf13",
+        "7db22525a4aae328888cadaff69907e9f3a1cde3",
+        "7fae8a7b583c038d66041e2d40b02f9406203db9",
+        "81dacd1222027abfd404fff12cb041e165223178",
+        "86f7418a3b93a8c62592eaaae00724e68baab024",
+        "8d7f7b54a7b16b4ebd4da0acd78b3acacbafaa50",
+        "8e5552899bcdcce43fd2deb7d365e169a8a72595",
+        "902f6f0f35ee68ec122a7091597f71fbfff65f88",
+        "9147c6e285108ac269e784cc722e7835ee48e7d2",
+        "92dbc31065ca9f8ceec29532f467d004a6ade74f",
+        "9306acc53ed3fd181e7f58ccf782fb4504637972",
+        "935a331b8d0e3eb90e1bb1d313fa97022bb2dd88",
+        "99f2270e654cf096aa63616bb6aa18168d0ef953",
+        "9b0503c28e59567332eb56b732ae9bb785db34ef",
+        "9bef05a9ca73a566c77cf23a04c2103fe1a3147f",
+        "9d2cd178676cb244c9934722ae99f29da83d79f6",
+        "9e1bd806c3696612551bc951eb95fba5052353de",
+        "a086d6d89839630195d7f15601e9f61b54952f44",
+        "a46f956bea36d4b7fb098fdec6a7fe8fe39ce834",
+        "a935031c09da9606f0aa087efe967253f2301728",
+        "b0cc3de1563362cf614b32195c5e94cee7105714",
+        "b1805894e0aa47c98b34dc76bdeac315417119f9",
+        "b2752a4b39e14b26aa4a9a84b8e95601e46a889e",
+        "b7930ab213b3b6e6f1098c8109e3d479a05e432b",
+        "b9e9f7220ba065ba8fef69cf90a68b5efbb45cee",
+        "bae64d856ee3e5c7922e546f40a7db557d162396",
+        "bb22a5dcfddf00d9045b8e181b0225c8e7dcbc29",
+        "c001f4328c2cf3a88d33c82a3f31ec7e6340af25",
+        "c5d767e9fd0045a0d4fca75876debb5384be331f",
+        "c71fcacd9827b35a00ed1e91bba10e44f9708434",
+        "c8eae9522216545fafc4ff10c2345338fe2bc74c",
+        "cc6599ad72ce4ede640620b35a02764bf359351e",
+        "d007331ed74b0d8c73c9727b783e0c4b3e7a88b9",
+        "d2417d74aa81114727acfa9e3300fe8e9f5b0664",
+        "d2a7ec6a4243ec797579be161d415aec9d688f8e",
+        "d413f1ea1798537c6dc9ee1df3149d80b580d0b0",
+        "d4f80be6705ff4153b1143ae9e9f35596ec16252",
+        "d6da225989e25260dc4ac64c06a7d4860c075759",
+        "d85c3ea949b98eee5386f2c2899b3cc3f0987df1",
+        "dd052e31687ff5986d4ec2ecf7cdd48202c7dc48",
+        "e0785ceccb8bd1ce8ca33885f56215a7201d9b76",
+        "e0e93ee4f61f1882f8ebcdff22f8d76a039ec956",
+        "e40064a2f2556b278b2e5e7300e10bb2e6f5d9e4",
+        "e53a9337aa6fabccb9f7e3524ec66a570aeec3e3",
+        "e5b981988da7fcdf3266c3268e2056b1dce8f872",
+        "e6e35801e4ec064d106a975d06d0dc239bc561c0",
+        "ec6a1fce1b228e74e1fa4cf0ca5ac68050105034",
+        "ed13a680798e87b8fe7d97f993aa97224e7fce62",
+        "eeac43d9c18ec5c67842b863e3b25b917fdfbb91",
+        "f5b231cf402bf7c9f48ca98d09a28b190f87e11c",
+        "ff3da079cc4e081fb8f1d101647e861a9fd0786c"
+      ];
+      function webGLStart(gl, canvas) {
+        // New scene with our canvas dimensions and default camera with FOV 80
+        var scene = new CubicVR.Scene(canvas.width, canvas.height, 80);
+        scene.resize(canvas.width,canvas.height);
+        scene.bindLight(new CubicVR.Light({
+          type:CubicVR.enums.light.type.AREA,
+          intensity:0.9,
+          mapRes:2048,  // 4096 ? 8192 ? ;)
+          areaCeiling:40,
+          areaFloor:-40,
+          areaAxis: [-2,-2], // specified in degrees east/west north/south
+          distance: 60
+        }));
+        CubicVR.setSoftShadows(true);
+        CubicVR.setGlobalAmbient([0.5,0.5,0.5]);
+        
+        // init physics manager
+        var physics = new CubicVR.ScenePhysics();
+        physics.setGravity([0,-4,0]);
+
+        // floor
+        var floorMaterial = new CubicVR.Material({
+          specular:[0,0,0],
+          shininess: 0.9,
+          env_amount: 1.0,
+          textures: {
+            color:  new CubicVR.Texture("./images/floor.png"),
+          }
+        });
+        
+        var floorMesh = CubicVR.primitives.box({
+          size: 1.0,
+          material: floorMaterial,
+          uvmapper: {
+            projectionMode: CubicVR.enums.uv.projection.CUBIC,
+            scale: [0.05, 0.05, 0.05]
+          }
+        }).prepare();
+        
+        var floorObject = new CubicVR.SceneObject({
+          mesh: floorMesh,
+          scale: [10, 0.2, 10],
+          position: [0, 0, 0],
+        });
+        floorObject.shadowCast = false;
+        
+        var rigidFloor = new CubicVR.RigidBody(floorObject, {
+          type: CubicVR.enums.physics.body.STATIC,
+          collision: {
+            type: CubicVR.enums.collision.shape.BOX,
+            size: floorObject.scale
+          }
+        });
+        physics.bindRigidBody(rigidFloor);
+        
+        
+        // Add SceneObject containing the mesh to the scene
+        scene.bindSceneObject(floorObject);
+
+        var sphereUV = {
+          projectionMode: "planar",
+          projectionAxis: "x",
+          scale: [2.0, 2.2, 2.0],
+          center: [0.0, 0.2, 0.0]
+        };
+
+        var length = ids.length;
+        for(i = 0; i < length; i++) {
+          var sphereMesh = new CubicVR.Mesh({
+            primitive: {
+              type: "sphere",
+              radius: 1.0,
+              lat: 32,
+              lon: 32,
+              material: new CubicVR.Material({
+                textures: {
+                  color: "./images/"+ids[i]+".png"
+                }
+              }),
+              uvmapper: sphereUV
+            },
+            compile: true
+          });
+
+          var sphereObject = new CubicVR.SceneObject({
+            mesh:sphereMesh,
+            position:[(Math.random()-0.5)*2.0*5,15+(Math.random())*60,(Math.random()-0.5)*2.0*5],
+            rotation:[Math.random()*360,Math.random()*360,Math.random()*360]
+          });
+
+          // Add SceneObjects                
+          scene.bindSceneObject(sphereObject);
+          
+          var rigidSphere = new CubicVR.RigidBody(sphereObject, {
+            type: CubicVR.enums.physics.body.DYNAMIC,
+            collision: {
+              type: CubicVR.enums.collision.shape.SPHERE,
+              size: sphereObject.scale
+            }
+          });
+          physics.bindRigidBody(rigidSphere);
+        }
+
+        // set initial camera position and target
+        scene.camera.position = [4, 30, 4];
+        scene.camera.target = [0, 0, 0];
+        
+        // Add our scene to the window resize list
+        CubicVR.addResizeable(scene);
+
+        
+        // initialize a mouse view controller
+        var mvc = new CubicVR.MouseViewController(canvas, scene.camera);
+        var kbd = CubicVR.keyboard;
+        var run = false;
+        var speed = 1.0;
+        
+        // Start our main drawing loop, it provides a timer and the gl context as parameters
+        CubicVR.MainLoop(function(timer, gl) {
+          var seconds = timer.getSeconds();
+          if (run) {
+            physics.stepSimulation(timer.getLastUpdateSeconds() * speed);
+          }
+
+          scene.render();
+
+          if (mvc.isKeyPressed(kbd.KEY_S)) {
+            run = false;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_R)) {
+            run = true;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_1)) {
+            speed = 0.25;
+            run = true;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_2)) {
+            speed = 1.0;
+            run = true;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_3)) {
+            speed = 4.0;
+            run = true;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_4)) {
+            speed = 16.0;
+            run = true;
+          }
+          else if (mvc.isKeyPressed(kbd.KEY_5)) {
+            speed = 100.0;
+            run = true;
+          }
+        });
+
+        var pickConstraint = null;
+        var pickDist = 0;
+        
+        mvc.setEvents({
+          mouseMove: function (ctx, mpos, mdelta, keyState) {
+            
+            if (!ctx.mdown) return;
+            
+            if (pickConstraint) {
+              pickConstraint.setPosition(scene.camera.unProject(mpos[0],mpos[1],pickDist));
+            } else {                   
+              ctx.orbitView(mdelta);
+            }
+            //          ctx.panView(mdelta);
+          },
+          mouseWheel: function (ctx, mpos, wdelta, keyState) {
+            ctx.zoomView(wdelta);
+          },
+          mouseDown: function (ctx, mpos, keyState) {
+            var rayTo = scene.camera.unProject(mpos[0],mpos[1]);
+            var result = physics.getRayHit(scene.camera.position,rayTo);
+            
+            if (result && !pickConstraint) {
+              pickConstraint = new CubicVR.Constraint({
+                type: CubicVR.enums.physics.constraint.P2P,
+                rigidBody: result.rigidBody,
+                positionA: result.localPosition
+              });                        
+              
+              physics.addConstraint(pickConstraint);                       
+              pickDist = CubicVR.vec3.length(CubicVR.vec3.subtract(scene.camera.position,result.position));                        
+              pickConstraint.setPosition(scene.camera.unProject(mpos[0],mpos[1],pickDist));
+            }
+            
+          },
+          mouseUp: function(ctx, mpos, keyState) {
+            if (pickConstraint) {
+              physics.removeConstraint(pickConstraint);
+              pickConstraint = null;
+            }                        
+          },
+          keyDown: null,
+          keyUp: null
+        });
+      }
+    </script>
+  </head>
+  
+  <body onLoad="CubicVR.start('auto',webGLStart);"></body>
+  
+</html>
